@@ -1,0 +1,215 @@
+header {
+  padding-top: 100px;
+}
+.steps-block {
+  margin-bottom: 30px;
+}
+.section-block .page-container {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.section-block .section-block-title {
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #006384;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.progressbar {
+  counter-reset: step;
+}
+.progressbar li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7d7d7d;
+}
+.progressbar li:before {
+  width: 30px;
+  height: 30px;
+  content: counter(step);
+  counter-increment: step;
+  line-height: 30px;
+  border: 3px solid #7d7d7d;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: white;
+}
+.progressbar li:after {
+  width: 100%;
+  height: 3px;
+  content: '';
+  position: absolute;
+  background-color: #7d7d7d;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: #00afea;
+}
+.progressbar li.active::before {
+  border-color: #00afea;
+}
+.progressbar li.active + li::after {
+  background-color: #00afea;
+}
+.order-table table {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.order-table table a,
+.order-table table a:focus {
+  color: #006cff;
+  text-decoration: none;
+}
+.order-table table thead th {
+  font-weight: 700;
+  text-align: center;
+  background-color: #efefef;
+}
+.order-table table tbody td,
+.order-table table thead th {
+  padding: 10px;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+.order-table table tbody .product-info .img {
+  float: left;
+  width: 80px;
+  text-align: center;
+}
+.order-table table tbody .product-info .img img {
+  max-width: 80px;
+  max-height: 100px;
+  border: 1px solid #eaeaea;
+}
+.order-table table tbody .product-info .info-wrap {
+  min-height: 80px;
+}
+.order-table table tbody .product-info .info-wrap .title {
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.order-table table tbody .product-price {
+  font-size: large;
+}
+.order-table table tbody .tool {
+  text-align: center;
+}
+.order-table table tbody .tool .btn-default:hover {
+  background: #b11e22;
+  border-color: #b11e22;
+  color: white;
+}
+.order-table table tfoot td {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  text-align: right;
+  vertical-align: middle;
+}
+.order-table table tfoot td label {
+  margin-bottom: 0;
+  line-height: 22px;
+}
+.order-table table tfoot td:last-child {
+  text-align: left;
+  font-size: large;
+}
+.order-table table tfoot td .amount {
+  font-size: 22px;
+  color: #f36f21;
+}
+.order-table .price,
+.order-table .order {
+  text-align: center;
+}
+.discount {
+  padding: 15px;
+  border: 1px solid #cccccc;
+}
+ul.list-benefits li {
+  padding: 4px 0 4px 32px;
+  margin-bottom: .75em;
+  font-weight: 600;
+  line-height: 1.4;
+  position: relative;
+}
+ul.list-benefits li::before {
+  text-align: center;
+  line-height: 27px;
+  content: "\f00d";
+  color: #0c0c0c;
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 27px;
+}
+ul.list-benefits li.active::before {
+  content: "\f00c";
+  color: #1de717;
+}
+.form-control-1 {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0 10px;
+  background: #fff;
+  outline: 0;
+}
+.label-1 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.label-1 i {
+  margin-right: 5px;
+}
+.is_disabled {
+  opacity: .3;
+  pointer-events: none;
+}
+@media (min-width: 768px) {
+  .product-info .img {
+    float: left;
+    width: 80px;
+    text-align: center;
+  }
+  .product-info .img img {
+    max-width: 80px;
+    max-height: 100px;
+    border: 1px solid #eaeaea;
+  }
+  .product-info .info-wrap {
+    min-height: 80px;
+    padding-left: 95px;
+  }
+  .product-info .info-wrap .title {
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+}

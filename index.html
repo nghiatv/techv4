@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugin/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugin/icheck/skins/all.css">
+    <link rel="stylesheet" href="plugin/icheck/skins/square/blue.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header class="container-fluid"></header>
+
+<section class="steps-block container-fluid">
+    <div class="container">
+
+        <ul class="progressbar">
+            <li class="active">Khóa học bạn chọn</li>
+            <li class="active">Thông tin học viên</li>
+            <li>Hình thức thanh toán</li>
+            <li>Xác nhận thành công</li>
+        </ul>
+
+    </div>
+</section>
+<section class="order-table section-block container-fluid">
+    <div class="container page-container">
+        <div class="order-table-head">
+        </div>
+        <div class="order-table-main row">
+            <div class="col-sm-8">
+                <h2 class="section-block-title">Thông tin đơn hàng</h2>
+
+                <form action="">
+                   <div class="table-responsive">
+                       <table class=" table">
+                           <thead>
+                           <tr>
+                               <th>STT</th>
+                               <th>Thông tin sản phẩm</th>
+                               <th>Thành tiền</th>
+                               <th>Xóa</th>
+                           </tr>
+                           </thead>
+                           <tbody>
+                           <tr class="product-item">
+                               <td class="order">1</td>
+                               <td class="product-info">
+                                   <a target="_blank"
+                                      href="https://images-na.ssl-images-amazon.com/images/I/91-1725QsaL.SR420,420_.jpg"
+                                      class="img ">
+                                       <img alt="" class="img-responsive hidden-xs"
+                                            src="https://images-na.ssl-images-amazon.com/images/I/91-1725QsaL.SR420,420_.jpg"></a>
+                                   <div class="info-wrap">
+                                       <div class="title">
+                                           <a target="_blank"
+                                              href="/">
+                                               <h4>Khóa học lập trình NodeJs</h4></a>
+                                       </div>
+                                   </div>
+                               </td>
+
+                               <td class="product-price">
+                                   <div class="price">
+                                       300.000 <sup>đ</sup>
+                                   </div>
+
+                               </td>
+                               <td class="tool">
+                                   <button data-asin="B00422MCVW" type="button"
+                                           data-tooltip="Nhấp vào đây để xóa<br /> sản phẩm khỏi giỏ hàng"
+                                           data-placement="left" class="btn btn-default ttip bt-remove-cart-item"
+                                           style="cursor: pointer;"><i class="fa fa-remove"></i></button>
+                               </td>
+                           </tr>
+                           <tr class="product-item">
+                               <td class="order">2</td>
+                               <td class="product-info">
+                                   <a target="_blank"
+                                      href="https://images-na.ssl-images-amazon.com/images/I/91-1725QsaL.SR420,420_.jpg"
+                                      class="img">
+                                       <img alt="" class="img-responsive hidden-xs"
+                                            src="https://images-na.ssl-images-amazon.com/images/I/91-1725QsaL.SR420,420_.jpg"></a>
+                                   <div class="info-wrap">
+                                       <div class="title">
+                                           <a target="_blank"
+                                              href="/">
+                                               <h4>Khóa học lập trình NodeJs</h4></a>
+                                       </div>
+                                   </div>
+                               </td>
+
+                               <td class="product-price">
+                                   <div class="price">
+                                       300.000 <sup>đ</sup>
+                                   </div>
+
+                               </td>
+                               <td class="tool">
+                                   <button type="button"
+                                           data-tooltip="Nhấp vào đây để xóa<br /> sản phẩm khỏi giỏ hàng"
+                                           data-placement="left" class="btn btn-default ttip bt-remove-cart-item"
+                                           style="cursor: pointer;"><i class="fa fa-remove"></i></button>
+                               </td>
+                           </tr>
+                           </tbody>
+                           <tfoot>
+                           <tr>
+                               <td colspan="2">
+
+                                       <input type="checkbox" name="">
+                                   <label>
+                                       Xuất hóa đơn 10%
+                                   </label>
+
+                               <td colspan="2">
+                                   Tổng tiền: <strong class="amount">4.000.000 đ</strong>
+                               </td>
+                           </tr>
+                           </tfoot>
+                       </table>
+                   </div>
+                </form>
+            </div>
+            <div class="col-sm-4">
+                <h2 class="section-block-title">Khóa học liên quan</h2>
+               <div class="discount">
+                   <div class="input-discount">
+                       <div class="form-group has-success has-feedback">
+                           <label class="control-label" for="inputSuccess2">Mã khuyến mãi:( Nếu có)</label>
+                           <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+                           <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                           <span id="inputSuccess2Status" class="sr-only">(success)</span>
+                       </div>
+                   </div>
+                   <ul class="list-benefits">
+                       <li class="active">Nhận áo T-Shirt của Techmaster</li>
+                       <li>Đăng kí thêm khóa học bài giảng linux để được giảm 50% học phí</li>
+                       <li>Nhận mã voucher khi đăng kí các khóa học có tổng học phí lớn hơn 5.000.000 đ</li>
+
+                   </ul>
+               </div>
+               </div>
+        </div>
+        <div class="relate-course-head">
+            <h2 class="section-block-title">Khóa học liên quan</h2>
+        </div>
+        <div class="relate-course-main row">
+
+        </div>
+    </div>
+</section>
+
+
+<script src="plugin/icheck/icheck.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' // optional
+        });
+    });
+</script>
+</body>
+</html>
