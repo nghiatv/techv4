@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hình thức thanh toán</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugin/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugin/icheck/skins/all.css">
+    <link rel="stylesheet" href="plugin/icheck/skins/square/blue.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header class="container-fluid"></header>
+
+<section class="steps-block container-fluid">
+    <div class="container">
+
+        <ul class="progressbar">
+            <li class="active">Khóa học bạn chọn</li>
+            <li class="active">Thông tin học viên</li>
+            <li class="active">Hình thức thanh toán</li>
+            <li class="active">Xác nhận thành công</li>
+        </ul>
+
+    </div>
+</section>
+
+<section class="section-block order-finish-block container-fluid">
+    <div class="container page-container">
+        <div class="block-head">
+            <div class="block-title">Quý khách đã đặt hàng thành công!</div>
+        </div>
+        <div class="block-main row">
+           <div class="col-sm-8 col-sm-offset-2"> <div class="text">
+               <p>Xin Cảm ơn Quý khách đã mua hàng trên <span class="text-red">Fado.vn</span></p>
+               <p>Mã đơn hàng vừa đặt của quý khách là <span class="text-blue"><a href="/chi-tiet-don-hang-64245">AM261216-64245</a></span>.</p>
+               <p>Chúng tôi sẽ nhanh chóng tiến hành kiểm duyệt đơn hàng của quý khách để đảm bảo hàng hóa được nhập khẩu theo đúng pháp luật Việt Nam.</p>
+               <p>Sau khi hoàn tất kiểm duyệt, Chúng tôi sẽ gửi mail thông báo yêu cầu thanh toán để đơn hàng có hiệu lực. Nếu không nhận được mail trong hộp thư đến vui lòng kiểm tra tại các nhãn khác trong hộp thư của quý khách.</p>
+               <p>Quý khách có thể tham khảo cách thức thanh toán <a href="/thanh-toan-phuong-thuc-thanh-toan/" target="_blank"><b>tại đây</b></a></p>
+               <p>Một lần nữa, xin cám ơn quý khách đã tin tưởng và sử dụng dịch vụ của chúng tôi.</p>
+           </div>
+               <div class="btn-wrap">
+                   <a class="btn btn-outline-danger" href="/">Tiếp tục mua hàng</a>
+                   <a id="noLogin" class="btn btn-outline-danger" data-toggle="modal" href="#">Xem lại hóa đơn</a>
+                   <a class="btn btn-outline-danger" target="_blank" href="#">Hướng dẫn thanh toán</a>
+               </div></div>
+        </div>
+    </div>
+</section>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="plugin/icheck/icheck.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' // optional
+        });
+    });
+    $('.control a').click(function (e) {
+        e.preventDefault();
+
+        $('.control a').each(function () {
+            $(this).removeClass('active');
+        });
+        $(this).addClass('active');
+        $(this).tab('show');
+    })
+
+</script>
+
+
+</body>
+</html>

@@ -9,6 +9,9 @@ header {
 .steps-block {
   margin-bottom: 30px;
 }
+.text-red {
+  color: red !important;
+}
 
 .section-block {
 
@@ -256,5 +259,147 @@ ul.list-benefits {
 
     }
 
+  }
+}
+
+.payment-wrap{
+  margin: 0 0 15px 0;
+  border: 1px solid #ddd;
+}
+.payment-content{
+  display: table;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.control{
+  display: table-cell;
+  vertical-align: top;
+ padding: 0 0 30px 0;
+
+  .control-tab{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    a{
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    a.active .indicator{
+      background: @blue-color;
+      color: #fff;
+      &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -29px;
+        width: 0;
+        z-index: 2;
+        height: 0;
+        border-style: solid;
+        border-width: 50px 0 50px 30px;
+        border-color: transparent transparent transparent @blue-color;
+      }
+    }
+
+
+    .indicator{
+      width: 100%;
+      display: table;
+      height: 100px;
+      cursor: pointer;
+      &:first-child{
+      }
+      .icon{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+        background: url(../img/bg-shadow-payment.png) center right no-repeat;
+        img{
+          max-width: 36px;
+          margin: 0 auto;
+        }
+      }
+      .title{
+
+        vertical-align: middle;
+        padding: 0 15px;
+        display: none;
+      }
+      .desc{
+        display: none;
+      }
+    }
+
+  }
+}
+@media (min-width: 768px) {
+  .control .control-tab .indicator .title {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 15px;
+  }
+  .control .control-tab .indicator .icon{
+    width: 71px;
+  }
+
+}
+
+.payment-type-content{
+  display: table-cell;
+  padding-left: 0;
+  .col-head{
+    background: #eff9fd;
+    display: table;
+    width: 100%;
+    min-height: 100px;
+    .tb-cell{
+      display: table-cell;
+      vertical-align: middle;
+      padding: 30px 40px;
+      min-height: 100px;
+    }
+  }
+  .col-main{
+    padding: 30px 40px 0;
+  }
+
+
+}
+
+.order-finish-block{
+  .block-head{
+    text-align: center;
+    margin-bottom: 30px;
+    .block-title{
+      color: #2c931d;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+  }
+  .block-main{
+    min-height: 223px;
+    margin-bottom: 30px;
+    .btn-wrap{
+      .btn{
+        line-height: 38px;
+        font-weight: 600;
+        font-size: 13px;
+        margin-right: 10px;
+        padding: 0 30px;
+        text-transform: none;
+        &.btn-outline-danger{
+          background: 0 0;
+          color: #333;
+          border-color: #b11e22;
+        }
+
+      }
+    }
   }
 }

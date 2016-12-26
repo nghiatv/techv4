@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thanh toán</title>
+    <title>Hoàn tất đăng kí</title>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css">
@@ -26,8 +26,8 @@
         <ul class="progressbar">
             <li class="active">Khóa học bạn chọn</li>
             <li class="active">Thông tin học viên</li>
-            <li>Hình thức thanh toán</li>
-            <li>Xác nhận thành công</li>
+            <li class="active">Hình thức thanh toán</li>
+            <li class="active">Xác nhận thành công</li>
         </ul>
 
     </div>
@@ -136,7 +136,8 @@
                 <div class="discount">
                     <div class="form-group has-success has-feedback">
                         <label class="control-label" for="inputSuccess2">Nhập coupon nếu có:</label>
-                        <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+                        <input type="text" class="form-control" id="inputSuccess2"
+                               aria-describedby="inputSuccess2Status">
                         <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
                         <span id="inputSuccess2Status" class="sr-only">(success)</span>
                     </div>
@@ -150,91 +151,121 @@
             </div>
         </div>
         <div class="section-two">
-            <h2 class="section-block-title">Đăng nhập tài khoản</h2>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 without-login" >
-                <div class="radio">
+            <h2 class="section-block-title">Chọn hình thức thanh toán</h2>
+            <div class="row payment-wrap">
+                <div class="col-xs-3 col-sm-4 col-md-3 control">
+                    <div class="control-tab">
+                        <a href="#div1" data-toggle="tab" class="active">
+                            <div class="indicator">
+                                <div class="icon"><img src="img/credit.png"
+                                                       alt=""></div>
+                                <div class="title">
+                                    <p>Thanh toán trực tuyến</p>
+                                    <p><span style="color:#43d243;;">Miễn phí </span></p>
+                                </div>
+                                <div class="desc">Để thanh toán trực tuyến, tài khoản ngân hàng của bạn phải đăng ký sử dụng
+                                    internet banking
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="control-tab">
+                        <a href="#div2" data-toggle="tab">
+                            <div class="indicator">
+                                <div class="icon">
+                                    <img src="img/money.png"
+                                         alt="">
 
-                    <label> <input type="radio" name="typelogin" value="1" checked >&nbsp;&nbsp; Thanh toán không cần
-                        đăng nhập</label>
+                                </div>
+                                <div class="title">
+                                    <p>Nộp tiền mặt tại Techmaster</p>
+                                    <p><span style="color:#43d243;">Miễn phí</span></p>
+                                </div>
+                                <div class="desc">Để thanh toán trực tuyến, tài khoản ngân hàng của bạn phải đăng ký sử dụng
+                                    internet banking
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="control-tab">
+                        <a href="#div3" data-toggle="tab">
+                            <div class="indicator">
+                                <div class="icon"><img src="img/ship.png"
+                                                       alt=""></div>
+                                <div class="title">
+                                    <p>Thanh toán tại nhà</p>
+                                    <p><span style="color: red">20,000<sup>đ</sup></span> mỗi thanh toán</p>
+                                </div>
+                                <div class="desc">Để thanh toán trực tuyến, tài khoản ngân hàng của bạn phải đăng ký sử dụng
+                                    internet banking
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
-               <div  >
-                   <form id="without-login"  >
-                       <div class="form-group">
-                           <label class="label-1" for="lname"><i class="fa fa-user"></i> Họ và tên</label>
-                           <input type="email" class="form-control-1" id="lname" placeholder="Họ và tên">
-                       </div>
-                       <div class="form-group">
-                           <label class="label-1" for="lphone"><i class="fa fa-phone"></i> Số điện thoại</label>
-                           <input type="text" class="form-control-1" id="lphone" placeholder="Số điện thoại">
-                       </div>
-                       <div class="form-group">
-                           <label class="label-1" for="lemail"><i class="fa fa-envelope"></i> Email address</label>
-                           <input type="email" class="form-control-1" id="lemail" placeholder="Email">
-                       </div>
-                       <div class="form-group">
-                           <label class="label-1" for="laddress"><i class="fa fa-location-arrow"></i> Địa chỉ</label>
-                        <textarea class="form-control-1" style="height: auto" name="" id="laddress" cols="30"
-                                  rows="10"></textarea>
-                       </div>
-                       <div class="form-group">
-                           <label>
-                               <input type="checkbox" checked name="">
-                               <span> Sử dụng thông tin này để tạo tài khoản trên Techmaster.vn </span>
-                               <br>
-                               <sub>* Kiểm tra email để xem thông tin tài khoản giao dịch thành công</sub>
-                           </label>
-                       </div>
-                   </form>
-               </div>
-            </div>
-            <div class="col-sm-6 with-login">
-                <div class="radio">
-                    <label> <input type="radio" name="typelogin" value="2">&nbsp;&nbsp; Đã có tài khoản? Đăng nhập để
-                        hoàn tất </label>
+                <div class="col-xs-9 col-sm-8 col-md-9 payment-type-content">
+                    <div class="tab-content">
+                        <div id="div1" class="tab-pane fade in active">
+
+                            <div class="col-main">
+                                <div id="payment-type-1" class="payment-type-wrap is-active">
+
+                                    <p> Các bạn có thể chuyển khoản ngân hàng để đóng học phí. Khi chuyển khoản, lưu ý đóng
+                                        đúng mức
+                                        học
+                                        phí.</p>
+
+                                    <p> Tên Tài Khoản NH: Công ty TNHH Techmaster Việt Nam</p>
+
+                                    <p>Số Tài Khoản NH: 002 1000 252 385 (TK Đồng Việt Nam)</p>
+
+                                    <p>Ngân hàng: Vietcombank, Chi nhánh Hà Nội</p>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div id="div2" class="tab-pane fade in">
+                            <div class="col-main">
+                                <div id="payment-type-1" class="payment-type-wrap is-active">
+
+                                    <p>- Quý khách vui lòng đến trực tiếp tại một trong hai địa chỉ sau để thực hiện thanh toán: </p>
+
+                                    <p><b class="text-red">TP. HCM:</b> Tòa nhà 247 - 602/45D Điện Biên Phủ, P.22, Q.Bình Thạnh, TP.HCM. <br>
+                                        <b class="text-red">Hà Nội</b> Số 4, Ngõ 26, Nguyên Hồng, Đống Đa, Hà Nội.  </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="div3" class="tab-pane fade in">
+                            <div class="col-main">
+                                <p>Techasmter sẽ tiến hành thu tiền tại địa chỉ quý khách đã đăng ký, áp dụng cho địa chỉ nội thành HN. Sau khi thu tiền thành công, Techmaster sẽ kích hoạt tài khoản khóa học cho bạn</p>
+                                <p>Phí thu tiền tại nhà: <span class="text-red">20,000<sup>đ</sup></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
-               <div >
-                   <form id="with-login" class="is_disabled" >
-                       <div class="form-group">
-                           <label class="label-1" for="exampleInputEmail1"><i class="fa fa-envelope"></i> Email
-                               address</label>
-                           <input type="email" class="form-control-1" id="exampleInputEmail1" placeholder="Email">
-                       </div>
-                       <div class="form-group">
-                           <label class="label-1" for="exampleInputPassword1"><i class="fa fa-key"></i> Password</label>
-                           <input type="password" class="form-control-1" id="exampleInputPassword1" placeholder="Password">
-                       </div>
-                       <div class="form-group">
-                           <p>Đăng nhập với:
-                               <a href="#"><i class="fa fa-facebook-official fa-2x"></i></a>
 
-                               &nbsp;&nbsp;
-
-                               <a href="#"><i class="fa fa-google-plus-square fa-2x" style="color: red"></i></a>
-
-                           </p>
-                       </div>
-                       <div class="form-group">
-                           <p>Bạn chưa có tài khoản? Vui lòng <a href="">đăng kí tại đây</a></p>
-                       </div>
-                   </form>
-               </div>
-            </div>
-
-            <div class="col-xs-12">
-                <a href="step-3.html">
-                    <p>
-                        <button class="pull-right btn-primary btn btn-lg">Tiếp tục</button>
-                    </p>
-                </a>
             </div>
         </div>
+        <div class="col-xs-12">
+            <a href="step-4.html">
+
+                <p>
+                    <button class="pull-right btn-primary btn btn-lg">Tiếp tục</button>
+                </p>
+            </a>
+        </div>
+
     </div>
 </section>
 
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="plugin/icheck/icheck.min.js"></script>
+
 <script>
     $(document).ready(function () {
         $('input').iCheck({
@@ -243,30 +274,15 @@
             increaseArea: '20%' // optional
         });
     });
+    $('.control a').click(function (e) {
+        e.preventDefault();
 
-    $(function () {
-        $("[name='typelogin']").on('ifChanged',function (event) {
-
-            console.log(event.type);
-            if (this.value == "1") {
-                $('form#with-login').addClass('is_disabled');
-                $('form#with-login input').attr('disabled',true);
-
-                $('form#without-login').removeClass('is_disabled');
-                $('form#without-login input,form#without-login textarea').removeAttr('disabled',true);
-            } else {
-                $('form#with-login').removeClass('is_disabled');
-                $('form#with-login input').removeAttr('disabled',true);
-
-                $('form#without-login').addClass('is_disabled');
-                $('form#without-login input,form#without-login textarea').attr('disabled',true);
-            }
-        })
-
-    });
-
-
-
+        $('.control a').each(function () {
+            $(this).removeClass('active');
+        });
+        $(this).addClass('active');
+        $(this).tab('show');
+    })
 
 </script>
 

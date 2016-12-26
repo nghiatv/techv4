@@ -4,6 +4,9 @@ header {
 .steps-block {
   margin-bottom: 30px;
 }
+.text-red {
+  color: red !important;
+}
 .section-block .page-container {
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -212,4 +215,125 @@ ul.list-benefits li.active::before {
     margin-bottom: 5px;
     font-weight: 700;
   }
+}
+.payment-wrap {
+  margin: 0 0 15px 0;
+  border: 1px solid #ddd;
+}
+.payment-content {
+  display: table;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+.control {
+  display: table-cell;
+  vertical-align: top;
+  padding: 0 0 30px 0;
+}
+.control .control-tab {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.control .control-tab a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+.control .control-tab a.active .indicator {
+  background: #00afea;
+  color: #fff;
+}
+.control .control-tab a.active .indicator:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -29px;
+  width: 0;
+  z-index: 2;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 0 50px 30px;
+  border-color: transparent transparent transparent #00afea;
+}
+.control .control-tab .indicator {
+  width: 100%;
+  display: table;
+  height: 100px;
+  cursor: pointer;
+}
+.control .control-tab .indicator .icon {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background: url(../img/bg-shadow-payment.png) center right no-repeat;
+}
+.control .control-tab .indicator .icon img {
+  max-width: 36px;
+  margin: 0 auto;
+}
+.control .control-tab .indicator .title {
+  vertical-align: middle;
+  padding: 0 15px;
+  display: none;
+}
+.control .control-tab .indicator .desc {
+  display: none;
+}
+@media (min-width: 768px) {
+  .control .control-tab .indicator .title {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 15px;
+  }
+  .control .control-tab .indicator .icon {
+    width: 71px;
+  }
+}
+.payment-type-content {
+  display: table-cell;
+  padding-left: 0;
+}
+.payment-type-content .col-head {
+  background: #eff9fd;
+  display: table;
+  width: 100%;
+  min-height: 100px;
+}
+.payment-type-content .col-head .tb-cell {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 30px 40px;
+  min-height: 100px;
+}
+.payment-type-content .col-main {
+  padding: 30px 40px 0;
+}
+.order-finish-block .block-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.order-finish-block .block-head .block-title {
+  color: #2c931d;
+  font-size: 24px;
+  line-height: 30px;
+}
+.order-finish-block .block-main {
+  min-height: 223px;
+  margin-bottom: 30px;
+}
+.order-finish-block .block-main .btn-wrap .btn {
+  line-height: 38px;
+  font-weight: 600;
+  font-size: 13px;
+  margin-right: 10px;
+  padding: 0 30px;
+  text-transform: none;
+}
+.order-finish-block .block-main .btn-wrap .btn.btn-outline-danger {
+  background: 0 0;
+  color: #333;
+  border-color: #b11e22;
 }
